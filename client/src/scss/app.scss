@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+$green: #29bb29;
+$gray: #f1f1f1;
+
+body {
+  margin: 0;
+  background-color: #fbfbfb;
+}
+.full-width {
+  font-family: 'PT Sans', sans-serif;
+  width: 100%;
+}
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.card-body {
+    padding: 60px 300px 80px 20px;
+    box-sizing: border-box;
+
+    &.hidden {
+        display: none;
+    }
+}
+.system-msg {
+    padding: 10px 15px;
+    background-color: $gray;
+    color: #848384;
+    width: 99%;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 0.9em;
+    font-style: italic;
+}
+.card-title {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    padding: 10px;
+    background-color: $gray;
+
+    h3 {
+      margin: 5px 0;
+      padding: 0px 15px;
+    }
+}
+
+.card-users {
+  position: fixed;
+  right: 0;
+  top: 0px;
+  padding: 60px 20px 80px;
+  width: 300px;
+  background-color: $gray;
+  box-sizing: border-box;
+  min-height: 100vh;
+
+  .users-list {
+    padding: 20px;
+
+    p {
+      margin: 5px 0;
+    }
+  }
+}
+
+.card-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    left: 0;
+    padding: 20px;
+    background: $gray;
+    z-index: 2;
+
+    form {
+        width: 100%;
+        display: flex;
+    }
+
+    .form-group {
+        width: 90%
+    }
+
+    button {
+        width: 10%;
+        background-color: $green;
+        border: 1px solid $green;
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    input {
+        padding: 10px 20px;
+        font-size: 16px;
+        width: 96%;
+        border-radius: 5px;
+        border: 1px solid gray;
+        outline: none;
+    }
+}
+
+
+.card-login {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba($color: #000000, $alpha: 0.6);
+
+    &.active {
+        display: block;
+    }
+
+    form {
+        width: 500px;
+        height: 300px;
+        padding: 20px;
+        position: fixed;
+        top: calc((100vh - 300px)/2);
+        left: calc((100vw - 500px)/2);
+        background-color: white;
+        border-radius: 5px;
+        
+        label {
+            font-size: 20px;
+            font-weight: bold;
+            width: 100%;
+            border-bottom: 1px solid #dadada;
+            display: block;
+            padding: 5px 0;
+        }
+
+        input {
+            padding: 10px 15px;
+            font-size: 18px;
+            outline: none;
+            display: block;
+            margin: 15px 0;
+            border: 0;
+            border-bottom: 1px solid gray;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button[type="submit"] {
+            padding: 10px 25px;
+            border-radius: 5px;
+            color: white;
+            background-color: $green;
+            border: 0;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+}

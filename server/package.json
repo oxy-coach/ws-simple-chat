@@ -1,0 +1,19 @@
+{
+  "name": "vovan-chat-server",
+  "version": "1.0.0",
+  "description": "server side of chat",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --ext js --watch src"
+  },
+  "author": "vovan <kolchin.moon@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
+    }
+}
